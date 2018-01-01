@@ -55,7 +55,7 @@
                         </div> 
                         <div class="right-input">
                            <select id="sort">
-                              <option value="az"> Sort By </option> 
+                              <option value="" disabled selected> Sort By </option> 
                               <option value="az"> A to Z </option> 
                               <option value="za"> Z to A </option> 
                            </select>
@@ -103,10 +103,14 @@
                             </div>
                    </div>
                    
-                </div>`;
+                </div>
+                <a href="#" class="home-link"> <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>`;
     }
     function notFoundComponent () {
-        return `<h3> Not Found </h3>`;
+        return `<h3 class="text-center err"> Not Found </h3>
+                 <a href="index.html" class="home-btn"> Back To Home </a>
+               `;
     }
      
     function render (data) {
